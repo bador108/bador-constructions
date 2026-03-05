@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import bgPhoto from './photo.jpg'; 
 
 const Home = () => {
   return (
     <div 
-      className="min-h-screen flex items-center justify-center bg-no-repeat bg-cover bg-center bg-fixed"
+      className="min-h-screen flex items-center justify-center bg-cover bg-center"
       style={{ 
-        backgroundColor: '#f1f5f9',
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('photo.jpg')` 
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${bgPhoto})` 
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-24 text-center">
@@ -35,4 +35,3 @@ const Home = () => {
 };
 
 export default Home;
-
