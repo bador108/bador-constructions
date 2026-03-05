@@ -39,7 +39,7 @@ const Contact = () => {
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-16 items-start">
-        {/* Levá strana - Skutečné údaje pro Bador Constructions */}
+    
         <div className="space-y-10">
           <div>
             <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-6">Kontaktní údaje</h3>
@@ -83,7 +83,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Pravá strana - Formulář zůstává stejný a funkční */}
+      
         <motion.div 
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -118,3 +118,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
