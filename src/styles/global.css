@@ -1,0 +1,30 @@
+:root {
+  --brand-dark: #0f172a;
+  --brand-blue: #1e3a8a;
+  --brand-light: #f1f5f9;
+  --brand-yellow: #facc15;
+}
+
+body {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+  font-family: 'Inter', sans-serif;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
