@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  // Propojení s tvým Formspree účtem
+  // Tvoje ID z Formspree: xvzwpdpl
   const [state, handleSubmit] = useForm("xvzwpdpl");
 
   // Pokud se zpráva úspěšně odešle, zobrazíme tohle:
@@ -74,7 +74,14 @@ const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-50"
         >
+          {/* DŮLEŽITÉ: Přidaný handleSubmit pro React a skrytý redirect pro jistotu */}
           <form onSubmit={handleSubmit} className="space-y-5">
+            <input 
+              type="hidden" 
+              name="_next" 
+              value="https://bador-constructions-test.vercel.app/contact" 
+            />
+            
             <div>
               <label htmlFor="name" className="block text-sm font-bold text-slate-700 mb-2">Celé jméno</label>
               <input 
