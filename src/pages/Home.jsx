@@ -1,15 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import bgPhoto from './photo.jpg'; 
 
-const Home = () => {
-  return (
-    <div 
-      className="min-h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ 
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${bgPhoto})` 
-      }}
-    >
+
+
       <div className="max-w-7xl mx-auto px-6 py-24 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,3 +28,4 @@ const Home = () => {
 };
 
 export default Home;
+
