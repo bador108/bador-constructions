@@ -10,7 +10,7 @@ const Home = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-6xl md:text-8xl font-black mb-8 leading-none">
-          STAVÍME <span className="text-blue-600">VIZE.</span>
+          STAVÍME <span className="text-blue-600">VIZE</span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed">
           Jsme architektonické studio, které kombinuje moderní design s udržitelností. 
@@ -25,5 +25,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
